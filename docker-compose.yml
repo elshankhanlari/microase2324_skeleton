@@ -2,25 +2,21 @@ version: '1'
 services:
   math-service:
     build: math_py
-    container_name: MATH_URL
     env_file:
       - .env
 
   string-service:
     build: string_py
-    container_name: STRING_URL
     env_file:
       - .env
 
   log-service:
     build: log_py
-    container_name: LOG_URL
     env_file:
       - .env
 
   gateway:
     build: gateway
-    container_name: GATEWAY_URL
     env_file:
       - .env
     ports:

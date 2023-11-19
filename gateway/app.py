@@ -1,5 +1,4 @@
 import requests
-import os
 
 from flask import Flask, render_template, request, make_response
 from requests.exceptions import ConnectionError, HTTPError
@@ -8,7 +7,6 @@ from urls import *
 ALLOWED_MATH_OPS = ["add", "sub", "mul", "div", "mod"]
 ALLOWED_STR_OPS = ["lower", "upper", "concat", "editdistance"]
 ALLOWED_LOG_OPS = ["getLog"]
-LOG_URL = os.environ["LOG_URL"]
 
 app = Flask(__name__, instance_relative_config=True)
 
