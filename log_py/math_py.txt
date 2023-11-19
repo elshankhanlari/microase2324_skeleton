@@ -1,0 +1,1 @@
+math_py| timestamp:5 operation:mul args:[1,2] result:200 
